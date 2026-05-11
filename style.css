@@ -1,0 +1,287 @@
+body{
+  cursor: url('meowlredo4.png')40 32, auto;
+  cursor: url('meowlredo4.png')40 32, pointer;
+}
+nav a:hover{
+  cursor: url('meowlredo4.png')40 32, auto;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    animation: animated 10s infinite;
+    background-image: url('minecraftCaveBG.png');
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+    /* color: rgba(255, 255, 255, 0) */
+}
+
+@keyframes animated{
+    0%{background-color: rgb(251, 254, 255);}
+    30%{background-color: rgb(235, 244, 255);}
+    60%{background-color: rgb(218, 244, 255);}
+    80%{background-color: rgb(235, 244, 255);}
+    100%{background-color: rgb(251, 254, 255);}
+}
+
+.rainbow {
+  animation: rainbowText 4s infinite;
+  font-family: 'Minecraft';
+}
+
+@keyframes rainbowText {
+  0% { color: rgb(255, 0, 76); }
+  14% { color: orange; }
+  28% { color: yellow; }
+  42% { color: green; }
+  56% { color: blue; }
+  70% { color: rgb(238, 130, 211); }
+  100% { color: rgb(255, 0, 170); }
+}
+
+nav {
+  background-color: rgb(233, 214, 167);
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+  border-right: 5px dotted green;
+  animation: pulse 3s infinite;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-image: url(dirtBGredo1.jpg);
+}
+@keyframes pulse {
+    0% { box-shadow: 0 0 5px green; }
+    50% { box-shadow: 0 0 20px rgb(226, 156, 65); }
+    100% { box-shadow: 0 0 5px green; }
+  }
+nav a {
+  display: block;
+  color: rgb(0, 94, 0);
+  background-color: rgb(211, 241, 150);
+  text-decoration: none;
+  margin-bottom: 10px;
+  padding: 8px;
+  font-weight: bold;
+  /* border-radius: 2px 2px; */
+  border: 2px solid green;
+  box-shadow: 2px 2px;
+}
+nav a:hover {
+  background-color: rgb(150, 241, 180);
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+nav a:hover {
+  animation: spin 1s linear infinite;
+}
+
+header{
+  text-align: center;
+  padding: 20px;
+  /* align header with the .kontent area so headings are centered above the content box */
+  margin-left: 325px; /* same left offset used by .kontent */
+  margin-right: 20px;
+}
+
+@font-face {
+  font-family: 'Minecraft';
+  src: url(Minecraftia-Regular.ttf);
+}
+
+.lol{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    animation: spin-3d 3s infinite linear;
+    animation: rainbowText 4s infinite;
+    font-family: 'Minecraft';
+}
+
+@keyframes spin-3d {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+      
+    }
+}
+.kontent{
+    position: relative;
+    margin-left: 325px;  /* 250px (nav width) + 20px (nav padding) + 30px space */
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid green;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    min-height: calc(100vh - 60px);  /* Full height minus top and bottom margins */
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-image {
+    margin-top: auto;
+    width: 300px;
+    height: auto;
+    align-self: center;
+    margin-bottom: 50px;
+    animation: shake 4s infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.nav-image:hover {
+  animation: shake 1s infinite;
+}
+
+.kontent2{
+  /* color:white; */
+    position: relative;
+    margin-left: 325px;  /* 250px (nav width) + 20px (nav padding) + 30px space */
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    min-height: calc(39vh - 60px);  /* Full height minus top and bottom margins */
+}
+
+.kontent3{
+    position: relative;
+    margin-left: 325px;  
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: justify;
+    min-height: calc(39vh - 60px);
+}
+
+h2{
+  font-family: 'Minecraft';
+  font-size: 24px;
+  font-weight: bold;
+}
+
+h3{
+  font-family: 'Minecraft';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Minecraft';
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'ComicSans';
+  src: url(Comic\ Sans\ MS.ttf);
+}
+
+/* Responsive Design */
+
+/* Mobile */
+@media (max-width: 767px) {
+  nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+  nav a {
+    display: inline-block;
+    margin: 5px;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  .nav-image {
+    width: 100px;
+    height: auto;
+    margin: 10px auto;
+    order: -1; /* Put image first */
+  }
+  .kontent, .kontent2, .kontent3 {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  header {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+  }
+  body {
+    height: auto;
+  }
+  .kontent {
+    min-height: auto;
+  }
+  .kontent2, .kontent3 {
+    min-height: auto;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    width: 200px;
+  }
+  .kontent, .kontent2, .kontent3 {
+    margin-left: 250px;
+  }
+  header {
+    margin-left: 250px;
+  }
+  .nav-image {
+    width: 180px;
+  }
+}
+
+/* Desktop - keep as is */
